@@ -1,5 +1,6 @@
-SELECT FL.title, *	
-	FROM public.film FL
-	left join public.inventory INV on (FL.film_id = INV.film_id)
-	left join public.rental RENT on (RENT.inventory_id = INV.inventory_id)
-	where RENT.rental_date >= '2005-05-24' and RENT.rental_date < '2005-05-25';
+SELECT FL.TITLE
+FROM PUBLIC.FILM FL
+LEFT JOIN PUBLIC.INVENTORY INV ON (FL.FILM_ID = INV.FILM_ID)
+LEFT JOIN PUBLIC.RENTAL RENT ON (RENT.INVENTORY_ID = INV.INVENTORY_ID)
+WHERE RENT.RENTAL_DATE >= '2005-05-24'
+	AND RENT.RENTAL_DATE < '2005-05-25';
