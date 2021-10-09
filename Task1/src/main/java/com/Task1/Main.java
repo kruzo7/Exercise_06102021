@@ -21,22 +21,22 @@ public class Main {
             case Calculate -> {
                 ICalculator calculator = new Calculator(input.getInput());
                 System.out.format("Calculating... %s%n", input.getInput());
-                Integer result = calculator.calculate();
+                int result = calculator.calculate();
                 System.out.format("Result: %d%n", result);
                 System.out.println("Calculating END.");
             }
 
             case Help -> {
-                System.out.println("Can calculate only one of each type in single request: adding, subtraction, multiplication, division");
+                System.out.println("Can calculate only one of each type in single request:");
+                System.out.println("adding(+), subtraction(-), multiplication(*), division(:)");
                 System.out.println("Example:");
-                System.out.println("programName 12+2-1*2:1");
-                System.out.println("programName 23*4:2");
-                System.out.println("programName 46:2");
+                System.out.println("12+2-1*2:1");
+                System.out.println("23*4:2");
+                System.out.println("46:2");
             }
         }
 
         System.out.println("End.");
-        System.in.read();
     }
 
 }

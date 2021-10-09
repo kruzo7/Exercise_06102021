@@ -5,5 +5,5 @@ import com.Task1.Enums.ProgramState;
 public interface ICheckInput {
     ProgramState check();
 
-    String[] getInput();
+    String getInput();
 }
