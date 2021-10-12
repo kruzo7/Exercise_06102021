@@ -6,12 +6,10 @@ import com.Task1.Interface.ICheckInput;
 import com.Task1.Logic.Calculator;
 import com.Task1.Utils.InputChecker;
 
-import java.io.IOException;
-
 public class Main {
 
     //Calculator
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         System.out.println("Start...");
 
         ICheckInput input = new InputChecker(args);
